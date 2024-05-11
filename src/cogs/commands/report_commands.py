@@ -73,7 +73,7 @@ class report_commands(commands.Cog):
         message_description = message_description_raw.replace('\n', '')
         message_author = get_id_by_url(message.embeds[0].author.url)
 
-        message_content = translator.translate("command.report_message.log_embed.description", message_content=message_description, message_author=message_author, message_id=message.id, uuid=uuid, user_id=interaction.user.id)
+        message_content = translator.translate("command.report_message.log_embed.description", message_description=message_description, message_author=message_author, message_id=message.id, uuid=uuid, user_id=interaction.user.id)
 
         embed = discord.Embed(title=translator.translate("command.report_message.log_embed.title"), description=message_content, color=int(color["red_color"], 16))
         

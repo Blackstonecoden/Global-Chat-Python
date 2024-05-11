@@ -1,6 +1,6 @@
 {
   "command.staff_list.description": "Outputs the list of all staff members",
-  "command.set_role.description": "Outputs the list of banned users",
+  "command.set_role.description": "Allows you to set the role of a user",
   "command.set_role.parameter.userid": "Enter the User ID of the user",
   "command.set_role.parameter.role": "Enter the role that the user should receive",
   "command.set_role.parameter.permission_level": "Specify the permission level that the user should receive",
@@ -27,7 +27,7 @@
   "command.help.description": "A detailed and user-friendly list of all commands",
 
 
-  "client.tree.cooldown": "`⌛` Cooldown. Please retry in **$seconds **seconds.",
+  "client.tree.cooldown": "`⌛` Cooldown! Please retry in **$seconds **seconds.",
   "client.tree.bot_missing_Permissions": "`❌` I don't have sufficient permissions. Please make sure that the BOT has the permissions it's granted with when invited. To fix this error, re-invite the bot using the official invite link.",
 
 
@@ -116,7 +116,7 @@
   "command.ban_user.embed.user.name": "User",
   "command.ban_user.embed.reason.name": "Reason",
   "command.ban_user.log_embed.title": "User Banned",
-  "command.ban_user.log_embed.description": "The Following user was banned by <@$user_id>",
+  "command.ban_user.log_embed.description": "The Following user was banned by <@$user_id>.",
   "command.ban_user.log_embed.user.name": "User",
   "command.ban_user.log_embed.reason.name": "Reason",
 
@@ -132,12 +132,12 @@
 
 
   "command.add_global.message.error": "`❌` An error occurred",
-  "command.add_global.error_embed.description": "You already have a GlobalChat on your server.\r\nPlease note that each server can only have one GlobalChat.",
+  "command.add_global.error_embed.description": "You already have a GlobalChat on your server.\nPlease note that each server can only have one GlobalChat.",
   "command.add_global.embed.title": "**Welcome to the GlobalChat**",
   "command.add_global.embed.description": "Your server is ready for action! From now on, all messages in this channel will be broadcasted to all other servers!\n\nThe Global Chat channel is <#$channel>.\n\nPlease note that in the GlobalChat, there should always be a slow mode of at least 5 seconds.",
 
   "command.remove_global.message.error": "`❌` An error occurred",
-  "command.remove_global.error_embed.description": "You don't have a GlobalChat on your server yet.\r\nAdd one with `/add-global` in a fresh channel.",
+  "command.remove_global.error_embed.description": "You don't have a GlobalChat on your server yet.\nAdd one with `/add-global` in a fresh channel.",
   "command.remove_global.embed.title": "**See you!**",
   "command.remove_global.embed.description": "The GlobalChat has been removed.\nYou can add it back anytime with `/add-global`.",
 
