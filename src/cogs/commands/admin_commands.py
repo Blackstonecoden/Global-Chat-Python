@@ -334,7 +334,7 @@ class admin_commands(commands.Cog):
                 formatted_list.append(f"{check_mark} **{guild.name}** - `{guild.member_count}`")
                     
             async def get_page(page: int):
-                emb = discord.Embed(title=translator.translate("command.server_list.embed.title", server_amount=server_amount), description=translator.translate("command.server_list.embed.description"), color=int(color["white_color"], 16))
+                emb = discord.Embed(title=translator.translate("command.server_list.embed.title", server_count=server_count), description=translator.translate("command.server_list.embed.description"), color=int(color["white_color"], 16))
                 offset = (page-1) * L
                 for server in formatted_list[offset:offset+L]:
                     emb.description += f"{server}\n"

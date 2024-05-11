@@ -34,7 +34,7 @@ embed_timestamp = datetime.now(de)
 ##########################################################################
 async def sendAll(self, guild):
     try:
-        embed = discord.Embed(title=translator.translate("cogs.global_setup.welcome_embed.title", guild=guild.name), description=translator.translate("cogs.global_setup.welcome_embed.description"), color=int(color["light_green_color"], 16), timestamp = embed_timestamp)
+        embed = discord.Embed(title=translator.translate("cogs.global_setup.welcome_embed.title", guild=guild.name), description=translator.translate("cogs.global_setup.welcome_embed.description", guild=guild.name), color=int(color["light_green_color"], 16), timestamp = embed_timestamp)
         embed.set_footer(text=f"{bot_name}", icon_url=f"{bot_logo_url}")
 
         icon = guild.icon

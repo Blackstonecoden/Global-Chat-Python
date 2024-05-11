@@ -118,7 +118,7 @@ class ban_system(commands.Cog):
 
                 await interaction.response.send_message(embed=embed, ephemeral=True)
 
-                unban_embed = discord.Embed(title=translator.translate("command.unban_user.log_embed.title"), description=translator.translate("command.unban_user.log_embed.description"), color=int(color["light_green_color"], 16), timestamp=embed_timestamp)
+                unban_embed = discord.Embed(title=translator.translate("command.unban_user.log_embed.title"), description=translator.translate("command.unban_user.log_embed.description", user_id=interaction.user.id), color=int(color["light_green_color"], 16), timestamp=embed_timestamp)
                 unban_embed.add_field(name=translator.translate("command.unban_user.log_embed.user.name"), value=f"<@{userid}>")
 
                 ban_reason = get_ban_reason(userid)
