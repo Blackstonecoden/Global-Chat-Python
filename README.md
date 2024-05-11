@@ -53,7 +53,7 @@ Next, the config.json will be edited. To do this, open the file `./config.json` 
 {
   "language": "en",
 
-  "language_file_path": "C:\\Users\\josef\\Visual Studio Code\\1 - Discord BOTs\\Python\\Global-Chat\\src\\data",
+  "language_file_path": "./src/data",
   "swear_file_path": "./src/messages/swear.txt",
   "bot_settings_file_path": "./src/config/bot_settings.json",
   "emoji_file_path": "./src/messages/emoji.txt",
